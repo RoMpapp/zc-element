@@ -1,14 +1,11 @@
 name: Test and deploy
 
-// 监听 master 分支的 push 事件
 on:
   push:
     branches:
       - master
 
-// 定义 job
 jobs:
-  // 测试
   test:
     name: Run Lint and Test
     runs-on: ubuntu-latest
